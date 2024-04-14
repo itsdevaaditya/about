@@ -1,0 +1,20 @@
+<script>
+      // gw tau beberapa dari kalian liat dev mode di chrome atau liat source codenya bukan?
+      var passwords = ["Neolene", "Nia", "Olin", "Nisrina"];
+      (function passcodeprotect() {
+         var passcode = prompt("gw suka sama siapa? (yang lu tau, semuanya sekelas ama gw)");
+         if (passcode === null) { // User clicked "Cancel"
+            document.body.classList.add('hidden'); // Hide content
+            return; // Exit function
+         }
+         while (!passwords.includes(passcode)) {
+            alert("Salah, coba cek hurufnya, kapital atau kagak, nama lengkapnya siapa, atau panggilannya siapa.");
+            passcode = prompt("gw suka sama siapa hayo...? clue: temen SMP (1), ama SMA (2). yang tau ada deh...");
+            if (passcode === null) { // User clicked "Cancel" in the loop
+               document.body.classList.add('hidden'); // Hide content
+               return; // Exit function
+            }
+         } 
+        alert('jir tau dong (jan disebarin ya, nanti jadi negro)');
+      }());
+    </script>
