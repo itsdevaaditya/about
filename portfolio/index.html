@@ -540,14 +540,14 @@
       object-fit: cover;
       display: block;
       border-radius: min(1.7vw, 8px);
-      scale: 1;
+      scale: .95;
       opacity: 1;
       box-shadow: 0 1.1px 1px rgba(86, 86, 86, 0.493);
-      transition: all 0.3s ease;
+      transition: all 0.3s cubic-bezier(0, 0.53, 0.3, 1);
     }
 
     .gallery-item img:hover {
-      transition: all 0.4s ease;
+      transition: all 0.4s cubic-bezier(0, 0.53, 0.3, 1);
       -webkit-transform: scale(.97);
       transform: scale(.97);
       opacity: .75;
