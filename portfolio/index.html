@@ -507,6 +507,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(min(220px, 100%), 1fr));
       gap: min(1vw, 8px);
+      margin: auto;
     }
 
     .gallery-item {
@@ -515,7 +516,8 @@
       display: flex;
       width: 100%;
       overflow: hidden;
-      justify-content: space-around;
+      justify-content: center;
+      border-radius: min(1.7vw, 8px);
     }
 
     .gallery-item img {
@@ -528,7 +530,7 @@
       object-fit: cover;
       display: block;
       border-radius: min(1.7vw, 8px);
-      scale: .95;
+      scale: .96;
       opacity: 1;
       transition: all 0.3s cubic-bezier(0, 0.53, 0.3, 1);
     }
