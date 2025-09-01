@@ -796,12 +796,12 @@ body.no-scroll {
 }
 
 .ytikon {
-  padding-right: min(3vw, 20px);
+  padding-right: min(2.5vw, 20px);
   justify-content: center;
   align-items: center;
   line-height: min(8vw, 32px);
   color: #ff0033;
-  font-size: min(5vw, 28px);
+  font-size: min(6vw, 28px);
   display: flex;
 }
 
@@ -851,7 +851,7 @@ body.no-scroll {
   background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: min(5vw, 28px);
+  font-size: min(6.5vw, 28px);
   display: flex;
 }
 
@@ -869,7 +869,7 @@ body.no-scroll {
     align-items: center;
     margin: auto;
     display: flex;
-    max-width: min(45vw, 170px);
+    max-width: min(46vw, 170px);
     text-decoration: none;
     transition: all .15s ease;
     opacity: 100%;
@@ -890,14 +890,20 @@ body.no-scroll {
   padding-right: min(3vw, 20px);
   justify-content: center;
   align-items: center;
-  line-height: min(8vw, 32px);
+  line-height: min(6vw, 32px);
   color: #ffffff;
-  font-size: min(5vw, 25px);
+  font-size: min(6vw, 25px);
   display: flex;
 }
 
 .br-custom2 {
   line-height: min(4vw, 20px); /* Adjust this value as needed */
+  display: block;
+  opacity: 0;
+}
+
+.br-custom3 {
+  line-height: min(3.5vw, 15px); /* Adjust this value as needed */
   display: block;
   opacity: 0;
 }
