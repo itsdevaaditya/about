@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+
+  <title>Portofolio Deva Aditya</title>
+  <meta name="description" content="Website Deva Aditya" />
+  <meta name="google-site-verification" content="3-bsjzBJwxjTlR86xG2TzXBft4wSed4DZTe8sjBNjIs" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="id_ID" />
+  
+  <link rel="preload" href="/font/Darsa1.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="media/ikonweb.ico" />
+  <link href="https://cdn.lineicons.com/5.0/lineicons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css">
+  <script src="https://kit.fontawesome.com/ee499313f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container prevent-select">
+      <a href="https://itsdevaaditya.netlify.app/" class="logo \"><img src="logo/itsdevaaditya_.png"></a>
+      
+      <!-- Tombol Hamburger (3 garis) -->
+      <div class="tombolhamburgir" id="menu-toggle">
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      
+      <!-- Menu -->
+      <ul class="nav-links" id="nav-links">
+        <li><a href="https://itsdevaaditya.netlify.app/">Portofolio</a></li>
+        <li><a href="https://itsdevaaditya.netlify.app/about/index.html">Tentang Saya</a></li>
+        <li><a href="https://itsdevaaditya.netlify.app/contact/index.html">Kontak</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="isihalaman2">
+    <div style="padding-top: min(1vw, 7px);"></div>
+    <div class="kartu3 portsa">
+          <div class="lekartu2">
+            <div class="judul-about">
+              <div class="kartunama">
+                <div class="namporto judul" style="padding-right: min(3vw, 10px);">PORTOFOLIO</div>
+              </div>
+            </div>
+          </div>
+          <hr class="pembatas2">
+          <div class="construct">
+            <ul>
+              <li class="constructls">
+                <div class="lepanah prevent-select">></div>
+                <i>Konten baru kemungkinan akan 
+                  segera ditambahkan.</i>
+              </li>
+            </ul>
+          </div>
+          <hr class="pembatas2">
+    </div>
+    <div style="padding-top: min(3vw, 10px);"></div>
+    <div class="kartuporto">
+      <div class="vidsgallery">
+        <div class="video-container">
+          <video class="vids" src="media/vid editing preview.mp4" autoplay playsinline muted loop></video>
+          <div class="video-text">VIDEO EDITING</div>
+        </div>
+        <div class="video-container">
+          <video class="vids" src="media/game porto preview.mp4" autoplay playsinline muted loop></video>
+          <div class="video-text">GAME SHOWCASE</div>
+        </div>
+        <div class="video-container">
+          <video class="vids" src="media/mogra preview.mp4" autoplay playsinline muted loop></video>
+          <div class="video-text">MOTION GRAPHICS</div>
+        </div>
+        <!-- Tambah video lainnya -->
+      </div>
+
+      <!-- Lightbox Video -->
+      <div id="video-lightbox" class="lightbox">
+        <div class="lightbox-content">
+          <span class="close-btn prevent-select">✕</span>
+          
+          <div class="lightbox-inner" style="display:flex; gap:10px; align-items:flex-start;">
+            <video id="lightbox-video" autoplay controls muted></video>
+            <div class="niga">
+              <div class="video-info" style="max-width:320px; color:white;">
+                <h3 id="video-title" style="margin-top:0"></h3>
+                <p id="video-desc" style="margin:0; opacity:.9;"></p>
+              </div>
+              <div class="video-nav-wrapper">
+                <button id="prev-video" class="video-nav prevent-select">❮</button>
+                <button id="next-video" class="video-nav prevent-select">❯</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="pembatas2">
+    </div>
+  </div>
+  <main class="main-content">
+      <div class="isihalaman2">
+        <!-- ISI HALAMAN -->
+        <!-- Lightbox Foto -->
+        <div id="photo-lightbox">
+          <button id="close-button" onclick="closePhotoLightbox()">✕</button>
+          <div id="carousel-container">
+            <button id="prev-button" class="carousel-button fas fa-angle-left"
+              onclick="changeImage(-1)"></button>
+            <img id="lightbox-img" class="prevent-select"/>
+            <button id="next-button" class="carousel-button fas fa-angle-right"
+              onclick="changeImage(1)"></button>
+          </div>
+          <a id="buy-button" href="#" target="_blank">Beli di Shutterstock</a>
+        </div>
+        
+        <div class="kartu2">
+          <div class="supertitle prevent-select">
+            <div class="ikon3">
+              <i class="fa-solid fa-camera-retro"></i>
+            </div>
+            <div>
+              FOTOGRAFI
+            </div>
+          </div>
+          <p class="fun-br prevent-select disable-right-click">break line</p>
+          <!-- Gallery -->
+          <div class="galeri">
+            <div id="gallery">
+              <!-- Hasil Fotografi 1 -->
+              <div class="gallery-item" onclick="openPhotoLightbox(0)">
+                <img src="media/sekul.webp" 
+                alt="Pertandingan Basket saat Classmeet di Sekolah SMA #1" />
+              </div>
+
+              <!-- Hasil Fotografi 2 -->
+              <div class="gallery-item" onclick="openPhotoLightbox(1)">
+                <img src="media/defend sekul.webp" 
+                alt="Pertandingan Basket saat Classmeet di Sekolah SMA #2" />
+              </div>
+
+              <!-- Hasil Fotografi 3 -->
+              <div class="gallery-item" onclick="openPhotoLightbox(2)">
+                <img src="media/train-station-security-officer.webp" 
+                alt="Petugas keamanan yang sedang berjalan di platform stasiun kereta"/>
+              </div>
+
+              <!-- Hasil Fotografi 4 -->
+              <div class="gallery-item" onclick="openPhotoLightbox(3)">
+                <img src="media/daun.webp" 
+                alt="Daun" />
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <br class="prevent-select" id="gamenya">
+        <div class="kartugame">
+          <div class="supertitle prevent-select">
+            <div class="ikon3">
+              <i class="fa-solid fa-gamepad"></i>
+            </div>
+            <div>
+              GAME
+            </div>
+          </div>
+          <p class="fun-br prevent-select disable-right-click">break line</p>
+        
+          <!-- Game Gallery -->
+          <div class="galeri">
+            <div id="game-gallery">
+              <!-- Game 1 -->
+              <a href="https://itsdevaaditya.itch.io/therobot" target="_blank" class="game-item">
+                <img src="media/therobotgame.webp" style="aspect-ratio:1.26/1;" alt="Ilustrasi hukum pascal">
+                <p class="game-desc"><b>THE ROBOT</b> | IGI Game Jam 2025</p>
+              </a>
+
+              <!-- Game 2 -->
+              <a href="https://gamejolt.com/games/UNaF/633118" target="_blank" class="game-item">
+                <video class="vids" src="media/unaf-game.mp4" alt="Unreal Nights at Freddy's Game" autoplay playsinline muted loop></video>
+                <p class="game-desc"><b>Unreal Nights at Freddy's</b> | FNaF Fangame</p>
+              </a>
+            
+              <!-- Game 3 -->
+              <a href="https://gamejolt.com/games/fplayhouse/649416" target="_blank" class="game-item">
+                <video class="vids" src="media/fp-game.mp4" alt="Freddy's Playhouse Game" autoplay playsinline muted loop></video>
+                <p class="game-desc"><b>Freddy's Playhouse</b> | FNaF Fangame</p>
+              </a>
+            
+            </div>
+          </div>
+        </div>
+        <!-- ISI HALAMAN -->
+      </div>
+    </main>
+  <footer class="copyright">
+    <hr class="hrkopikanan">
+    <div class="kopikanan-ikons">
+          <a class="kopika-a" target="_blank" href="https://www.instagram.com/itsdevaaditya_/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a class="kopika-a" target="_blank" href="https://www.youtube.com/@devaaditya_" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a class="kopika-a" target="_blank" href="https://x.com/itsdevaaditya_" aria-label="X / Twitter"><i class="fab fa-x-twitter"></i></a>
+    </div>
+    <div class="kopikanan">
+      <b style="font-weight: 600;">© 2025 Deva Aditya,</b> All rights reserved.
+    </div>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
